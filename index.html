@@ -375,9 +375,9 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
   .b34 .wm{height:30px}.b34-sub{font-size:15px}
   .b34-stats{grid-template-columns:1fr 1fr!important}.b34-stats strong{font-size:26px}.b34-stats span{font-size:12px}
   .b34-logos{gap:8px}
-  .lg{flex-basis:calc((100% - 16px)/3)!important;height:52px!important;padding:0 8px}
-  .lg>img{height:auto!important;max-height:22px;max-width:100%}
-  .lg-sq{gap:5px}.lg-sq img{width:20px!important;height:20px!important}.lg-sq b{font-size:12px}
+  .lg{flex-basis:calc((100% - 16px)/3)!important;height:54px!important;padding:0 10px;min-width:0}
+  .lg>img{height:var(--hm)!important;width:auto!important;max-width:100%}
+  .lg-sq{gap:5px;min-width:0}.lg-sq img{width:18px!important;height:18px!important;flex:0 0 18px}.lg-sq b{font-size:11px;line-height:1.15;white-space:normal!important;text-align:left}
   .ai{grid-template-columns:1fr!important;gap:14px;padding:16px}
   .ai-shot{min-height:0;height:auto;aspect-ratio:16/10}
   .ai h3{font-size:26px}.ai p{font-size:15px}
@@ -397,6 +397,15 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
   .contact{padding:24px 18px;border-radius:16px;margin-block:40px 20px;gap:18px}
   .contact h2{font-size:26px!important}.contact dl{font-size:12.5px}
   footer{flex-direction:column;gap:4px}
+}
+
+/* 모바일 접기 */
+.m-more{display:none}
+@media (max-width:640px){
+  .m-collapsed>.m-hide{display:none!important}
+  .gal.m-collapsed{grid-template-columns:1fr}.gal.m-collapsed img{aspect-ratio:16/9}
+  .m-more{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;margin-top:10px;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink2);font:600 13px var(--mono);cursor:pointer}
+  .m-more:focus-visible{outline:2px solid var(--fire);outline-offset:2px}
 }
 </style>
 </head><body>
@@ -516,7 +525,7 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
       <div><strong>4</strong><span>GTM · Marketing · Events · Analytics</span></div>
     </div>
     <p class="b34-cap">Trusted by (via Bridge34)</p>
-    <div class="b34-logos"><span class="lg"><img src="assets/b34/circle.png" alt="Circle" style="height:30px" loading="lazy"></span><span class="lg"><img src="assets/b34/stable.svg" alt="Stable" style="height:29px" loading="lazy"></span><span class="lg"><img src="assets/b34/aptos.svg" alt="Aptos" style="height:31px" loading="lazy"></span><span class="lg"><img src="assets/b34/bio.svg" alt="BIO Protocol" style="height:31px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/grvt.jpg" alt="GRVT"><b>GRVT</b></span></span><span class="lg"><img src="assets/b34/linea.svg" alt="Linea" style="height:31px" loading="lazy"></span><span class="lg"><img src="assets/b34/dappos.svg" alt="dappOS" style="height:28px" loading="lazy"></span><span class="lg"><img src="assets/b34/blockstreet.svg" alt="Block Street" style="height:19px" loading="lazy"></span><span class="lg"><img class="inv" src="assets/b34/synfutures.png" alt="SynFutures" style="height:25px" loading="lazy"></span><span class="lg"><img class="inv" src="assets/b34/arcium.svg" alt="Arcium" style="height:17px" loading="lazy"></span><span class="lg"><img src="assets/b34/orderly.svg" alt="Orderly Network" style="height:30px" loading="lazy"></span><span class="lg"><img src="assets/b34/maplestory-universe.svg" alt="MapleStory Universe" style="height:33px" loading="lazy"></span><span class="lg"><img src="assets/b34/bora.svg" alt="BORA" style="height:32px" loading="lazy"></span><span class="lg"><img src="assets/b34/iost-2.svg" alt="IOST" style="height:34px" loading="lazy"></span><span class="lg"><img src="assets/b34/d3.png" alt="D3" style="height:33px" loading="lazy"></span><span class="lg"><img src="assets/b34/megaeth.svg" alt="MegaETH" style="height:23px" loading="lazy"></span><span class="lg"><img src="assets/b34/eigen-cloud.png" alt="Eigen Cloud" style="height:38px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/ethena.png" alt="Ethena"><b>Ethena</b></span></span><span class="lg"><img src="assets/b34/falcon-finance.svg" alt="Falcon Finance" style="height:33px" loading="lazy"></span><span class="lg"><img src="assets/b34/virtuals-protocol.svg" alt="Virtuals Protocol" style="height:34px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/axis-robotics.png" alt="Axis Robotics"><b>Axis Robotics</b></span></span><span class="lg"><img src="assets/b34/og.svg" alt="0G" style="height:40px" loading="lazy"></span><span class="lg"><img src="assets/b34/antseed.svg" alt="Antseed" style="height:34px" loading="lazy"></span><span class="lg"><img src="assets/b34/flap.svg" alt="Flap" style="height:24px" loading="lazy"></span></div>
+    <div class="b34-logos"><span class="lg"><img src="assets/b34/circle.png" alt="Circle" style="height:30px;--hm:18.3px" loading="lazy"></span><span class="lg"><img src="assets/b34/stable.svg" alt="Stable" style="height:29px;--hm:18.1px" loading="lazy"></span><span class="lg"><img src="assets/b34/aptos.svg" alt="Aptos" style="height:31px;--hm:19.0px" loading="lazy"></span><span class="lg"><img src="assets/b34/bio.svg" alt="BIO Protocol" style="height:31px;--hm:19.4px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/grvt.jpg" alt="GRVT"><b>GRVT</b></span></span><span class="lg"><img src="assets/b34/linea.svg" alt="Linea" style="height:31px;--hm:19.4px" loading="lazy"></span><span class="lg"><img src="assets/b34/dappos.svg" alt="dappOS" style="height:28px;--hm:16.5px" loading="lazy"></span><span class="lg"><img src="assets/b34/blockstreet.svg" alt="Block Street" style="height:19px;--hm:9.5px" loading="lazy"></span><span class="lg"><img class="inv" src="assets/b34/synfutures.png" alt="SynFutures" style="height:25px;--hm:14.1px" loading="lazy"></span><span class="lg"><img class="inv" src="assets/b34/arcium.svg" alt="Arcium" style="height:17px;--hm:8.4px" loading="lazy"></span><span class="lg"><img src="assets/b34/orderly.svg" alt="Orderly Network" style="height:30px;--hm:18.8px" loading="lazy"></span><span class="lg"><img src="assets/b34/maplestory-universe.svg" alt="MapleStory Universe" style="height:33px;--hm:20.3px" loading="lazy"></span><span class="lg"><img src="assets/b34/bora.svg" alt="BORA" style="height:32px;--hm:20.1px" loading="lazy"></span><span class="lg"><img src="assets/b34/iost-2.svg" alt="IOST" style="height:34px;--hm:21.1px" loading="lazy"></span><span class="lg"><img src="assets/b34/d3.png" alt="D3" style="height:33px;--hm:20.4px" loading="lazy"></span><span class="lg"><img src="assets/b34/megaeth.svg" alt="MegaETH" style="height:23px;--hm:11.8px" loading="lazy"></span><span class="lg"><img src="assets/b34/eigen-cloud.png" alt="Eigen Cloud" style="height:38px;--hm:23.3px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/ethena.png" alt="Ethena"><b>Ethena</b></span></span><span class="lg"><img src="assets/b34/falcon-finance.svg" alt="Falcon Finance" style="height:33px;--hm:20.7px" loading="lazy"></span><span class="lg"><img src="assets/b34/virtuals-protocol.svg" alt="Virtuals Protocol" style="height:34px;--hm:21.1px" loading="lazy"></span><span class="lg"><span class="lg-sq"><img src="assets/b34/axis-robotics.png" alt="Axis Robotics"><b>Axis Robotics</b></span></span><span class="lg"><img src="assets/b34/og.svg" alt="0G" style="height:40px;--hm:25.1px" loading="lazy"></span><span class="lg"><img src="assets/b34/antseed.svg" alt="Antseed" style="height:34px;--hm:21.2px" loading="lazy"></span><span class="lg"><img src="assets/b34/flap.svg" alt="Flap" style="height:24px;--hm:12.7px" loading="lazy"></span></div>
   </div>
 </section>
 
@@ -619,4 +628,25 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
 <footer><span>© 2026 Fire Ant · Sanghyuk Cho</span><span>fireantcrypto.com</span></footer>
 </div>
 
+<script>
+(function(){
+  if(!window.matchMedia('(max-width:640px)').matches) return;
+  // [컨테이너, 항목, 보일 개수, 'last'=뒤쪽을 보이기]
+  var cfg=[['.pillars','.pl',2],['.press','.art',2],['.aff-grid','.aff-card',2],['.b34-logos','.lg',6],
+           ['#ai','.ai',1],['.chan','a',2],['.kol','div',2],['.vids','.vid',1],['.gal','img',1],['.tl','.step',2],['.career','li',2,'last']];
+  cfg.forEach(function(c){
+    var box=document.querySelector(c[0]); if(!box) return;
+    var items=[].slice.call(box.children).filter(function(e){return e.matches(c[1]);});
+    if(items.length<=c[2]) return;
+    var hide=c[3]==='last'?items.slice(0,items.length-c[2]):items.slice(c[2]);
+    hide.forEach(function(e){e.classList.add('m-hide');});
+    box.classList.add('m-collapsed');
+    var btn=document.createElement('button'); btn.type='button'; btn.className='m-more';
+    function label(){btn.textContent=box.classList.contains('m-collapsed')?('Show '+hide.length+' more ↓'):'Show less ↑';}
+    label();
+    btn.addEventListener('click',function(){var wasOpen=!box.classList.contains('m-collapsed');box.classList.toggle('m-collapsed');label();if(wasOpen){var top=box.getBoundingClientRect().top+window.scrollY-20;window.scrollTo({top:top});}});
+    if(box.tagName==='SECTION') box.appendChild(btn); else box.parentNode.insertBefore(btn,box.nextSibling);
+  });
+})();
+</script>
 </body></html>
