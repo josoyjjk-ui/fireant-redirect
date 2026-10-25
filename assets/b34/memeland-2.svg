@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 550">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #040000;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M665,300l35,35v150l-35,35h-115v-220h115ZM647.5,340h-57.5v140h57.5l12.5-12.5v-115l-12.5-12.5Z"/>
+  <path class="cls-1" d="M410,359.09v130.91h-40v-220h40l70,130.91v-130.91h40v220h-40l-70-130.91Z"/>
+  <path class="cls-1" d="M282.5,300l67.5,220h-40l-13.5-50h-73l-13.5,50h-40l67.5-220h45ZM260,351.85l-23,78.15h46l-23-78.15Z"/>
+  <path class="cls-1" d="M60,330v180h90v40H20v-220h40Z"/>
+  <path class="cls-1" d="M710,30v40h-90v50h80v40h-80v50h90v40h-130V30h130Z"/>
+  <path class="cls-1" d="M445,150l-35-75v145h-40V0h45l45,96.93L505,0h45v220h-40V75l-35,75h-30Z"/>
+  <path class="cls-1" d="M340,30v40h-90v50h80v40h-80v50h90v40h-130V30h130Z"/>
+  <path class="cls-1" d="M75,210l-35-75v145H0V60h45l45,96.93,45-96.93h45v220h-40v-145l-35,75h-30Z"/>
+</svg>
