@@ -209,6 +209,7 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
 .b34-logos img.inv{filter:grayscale(1) invert(1)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .b34-logos img.inv{filter:grayscale(1)}}
 :root[data-theme="dark"] .b34-logos img.inv{filter:grayscale(1)}
+.ai-main{margin-bottom:14px;border-top:4px solid var(--fire)}
 .ai{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,3.5vw,40px)}
 .ai-shot{border-radius:14px;overflow:hidden;border:1px solid var(--line);max-width:100%}
 .ai-shot img{width:100%;display:block}
@@ -278,8 +279,22 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
 </section>
 
 <section id="ai">
-  <p class="eyebrow">Building in AI</p>
-  <h2>I also run an AI business</h2>
+  <p class="eyebrow">Building with AI</p>
+  <h2>I build with AI, not just talk about it</h2>
+  <div class="ai ai-main">
+    <a class="ai-shot" href="https://antinfo.io/"><img src="assets/antinfo.jpg" alt="antinfo.io dashboard" loading="lazy"></a>
+    <div>
+      <span class="tag">Built solo with AI agents</span>
+      <h3>ANTINFO</h3>
+      <p>Korea's retail crypto dashboard: ETF flows, open interest, Coinbase and kimchi premium, Korean exchange listings, macro and unlock calendars. I built it myself with AI coding agents, and a team of AI agents runs it every day.</p>
+      <div class="ai-stats">
+        <div><strong>1,000+</strong><span>Automated data updates a day</span></div>
+        <div><strong>14:30</strong><span>Daily brief, written and illustrated by AI agents</span></div>
+        <div><strong>0</strong><span>Developers hired</span></div>
+      </div>
+      <div class="ctas"><a class="btn" href="https://antinfo.io/">antinfo.io →</a></div>
+    </div>
+  </div>
   <div class="ai">
     <a class="ai-shot" href="https://claw-node.com/"><img src="assets/clawnode.jpg" alt="ClawNode website" loading="lazy"></a>
     <div>
@@ -292,7 +307,6 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
         <div><strong>100%</strong><span>Data stays with the owner</span></div>
       </div>
       <div class="ctas"><a class="btn" href="https://claw-node.com/">claw-node.com →</a></div>
-      <div class="ai-also"><span>My own multi-agent team runs the daily brief</span><span>antinfo.io is AI-built</span></div>
     </div>
   </div>
 </section>
