@@ -1,7 +1,231 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8">
-<title>ANTINFO</title>
-<link rel="canonical" href="https://antinfo.io/">
-<meta name="robots" content="noindex">
-<script>location.replace("https://antinfo.io"+location.pathname+location.search+location.hash);</script>
-<meta http-equiv="refresh" content="0;url=https://antinfo.io/">
-</head><body>이 사이트는 <a href="https://antinfo.io/">antinfo.io</a> 로 이동했습니다.</body></html>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fire Ant — Korea's Crypto Voice</title>
+<meta name="description" content="Fire Ant (Sanghyuk Cho) — Korean crypto KOL and community leader. KBS, Korea Economic TV, 53,809-signature crypto-tax petition, Bridge34.">
+<meta property="og:title" content="Fire Ant — Korea's Crypto Voice"><meta property="og:description" content="Korean crypto KOL · community leader · Bridge34">
+<meta property="og:type" content="profile"><meta property="og:url" content="https://fireantcrypto.com/">
+<link rel="canonical" href="https://fireantcrypto.com/">
+<link rel="icon" href="assets/img-90a8c562.jpg">
+<meta property="og:image" content="https://fireantcrypto.com/assets/img-8c016f45.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@500;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --paper:#f2f3ef;--paper2:#e8eae3;--ink:#141a22;--ink2:#3b4452;--dim:#6b7380;--line:#d5d8cf;
+  --fire:#d7261e;--river:#2b5ba8;--card:#ffffff;
+  --display:'Bricolage Grotesque','IBM Plex Sans KR',system-ui,sans-serif;
+  --body:'IBM Plex Sans','IBM Plex Sans KR',system-ui,sans-serif;
+  --kr:'IBM Plex Sans KR','Apple SD Gothic Neo',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#10141b;--paper2:#161c25;--ink:#eef0ea;--ink2:#c3c9d3;--dim:#8a93a1;--line:#2a3240;--card:#171d27;--river:#6f9be6;--fire:#ff4a3d}}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#10141b;--paper2:#161c25;--ink:#eef0ea;--ink2:#c3c9d3;--dim:#8a93a1;--line:#2a3240;--card:#171d27;--river:#6f9be6;--fire:#ff4a3d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;padding-inline:16px}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto}
+.mock{background:var(--ink);color:var(--paper);font:500 12px var(--mono);text-align:center;padding:6px 10px;margin-inline:-16px;letter-spacing:.3px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:50%;display:block}
+.brand b{font:800 18px var(--display);letter-spacing:.4px;display:block;line-height:1.1}
+.brand small{font:500 11px var(--mono);color:var(--dim);letter-spacing:1.5px}
+.links{display:flex;gap:22px;flex-wrap:wrap;font:500 13px var(--mono);letter-spacing:1px;text-transform:uppercase}
+.links a{text-decoration:none;color:var(--ink2)}.links a:hover{color:var(--fire)}
+.lang{border:1px solid var(--line);border-radius:999px;padding:3px 10px;font:500 12px var(--mono);color:var(--dim)}
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;padding-block:56px 36px}
+.hero h1{font:800 clamp(46px,7.4vw,96px)/0.95 var(--display);letter-spacing:-2px;margin:0;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--fire)}
+.hero h1 .kr{display:block;font:700 clamp(22px,2.6vw,32px)/1.3 var(--kr);letter-spacing:0;color:var(--ink2);margin-top:14px}
+.hero p{font-size:clamp(17px,1.6vw,20px);color:var(--ink2);max-width:52ch;margin:22px 0 0}
+.ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font:600 15px var(--body);text-decoration:none;border:1px solid var(--ink)}
+.btn.pri{background:var(--fire);border-color:var(--fire);color:#fff}
+.btn:focus-visible{outline:3px solid var(--river);outline-offset:2px}
+.badge{justify-self:end;position:relative;width:min(340px,100%);aspect-ratio:1;max-width:100%}
+.badge img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--card);box-shadow:0 20px 60px rgba(20,26,34,.18)}
+.badge span{position:absolute;bottom:6%;left:-6%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font:500 13px var(--mono);box-shadow:0 8px 24px rgba(20,26,34,.08)}
+.badge span b{color:var(--fire)}
+/* bridges band: 34 arcs = Seoul's 34 Han river bridges (Bridge34) */
+.bridges{display:block;width:100%;height:auto;margin-block:8px 0}
+.bridges path{fill:none;stroke:var(--river);stroke-width:1.4;opacity:.55}
+.bridges line{stroke:var(--river);stroke-width:1;opacity:.35}
+.cap{font:500 12px var(--mono);color:var(--dim);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:6px}
+section{padding-block:64px 8px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:2px;text-transform:uppercase;color:var(--fire);margin:0 0 10px}
+h2{font:800 clamp(30px,3.8vw,46px)/1.05 var(--display);letter-spacing:-1px;margin:0 0 26px;text-wrap:balance}
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.nums div{padding:20px 18px 6px 0;border-right:1px solid var(--line)}
+.nums div:last-child{border-right:0}
+.nums strong{display:block;font:800 clamp(30px,3.6vw,46px)/1 var(--display);font-variant-numeric:tabular-nums}
+.nums span{display:block;color:var(--dim);font-size:14px;margin-top:8px}
+.tbd{color:var(--fire);font:500 12px var(--mono)}
+/* building */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;gap:8px;align-content:start}
+.card .st{font:500 11px var(--mono);letter-spacing:1.5px;color:var(--river)}
+.card h3{font:700 21px var(--display);margin:0}
+.card p{margin:0;color:var(--ink2);font-size:15px}
+.card a{font:500 13px var(--mono);color:var(--fire);text-decoration:none}
+/* partners */
+.logos{display:flex;flex-wrap:wrap;gap:10px}
+.logos span{border:1px solid var(--line);border-radius:999px;padding:9px 16px;font:600 15px var(--body);background:var(--card)}
+.note{color:var(--dim);font-size:13px;margin-top:12px}
+/* services */
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.svc div{padding:18px 18px 18px 0;border-bottom:1px solid var(--line)}
+.svc b{display:block;font:700 18px var(--display);margin-bottom:6px}
+.svc p{margin:0;color:var(--ink2);font-size:14.5px}
+/* notes */
+.notes{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.notes li{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.notes .n{font:500 13px var(--mono);color:var(--dim)}
+.notes .t{font:700 clamp(17px,1.8vw,21px)/1.35 var(--display)}
+.notes .s{font:500 12px var(--mono);color:var(--dim)}
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-radius:20px;padding:44px clamp(20px,4vw,48px);margin-block:64px 32px;display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}
+.contact h2{color:var(--paper);margin-bottom:12px}
+.contact p{color:#c8ccd3;margin:0;max-width:52ch}
+.contact .ctas .btn{border-color:var(--paper);color:var(--paper)}
+.contact .ctas .btn.pri{border-color:var(--fire);color:#fff}
+.contact dl{margin:0;display:grid;gap:10px;font:500 14px var(--mono)}
+.contact dt{color:#8a93a1;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.contact dd{margin:0 0 6px}
+footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media (max-width:860px){.hero{grid-template-columns:1fr}.badge{justify-self:start;width:220px}.cards{grid-template-columns:1fr}.nums{grid-template-columns:1fr 1fr}.nums div:nth-child(2){border-right:0}.svc{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}}
+@media (max-width:520px){.svc{grid-template-columns:1fr}.notes li{grid-template-columns:36px 1fr}.notes .s{grid-column:2}}
+
+.photo{background:repeating-linear-gradient(45deg,var(--paper2),var(--paper2) 10px,var(--paper) 10px,var(--paper) 20px);border:2px dashed var(--line);border-radius:18px;display:grid;place-items:center;color:var(--dim);font:500 13px var(--mono);text-align:center;padding:12px}
+.hero2{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:stretch;padding-block:40px 24px}
+.hero2 .photo{min-height:460px}
+.hero2 h1{font:800 clamp(46px,7vw,92px)/0.95 var(--display);letter-spacing:-2px;margin:0}
+.hero2 h1 em{font-style:normal;color:var(--fire)}
+.hero2 .kr{font:700 clamp(20px,2.2vw,28px)/1.3 var(--kr);color:var(--ink2);margin:12px 0 0}
+.tagline{font:500 14px var(--mono);color:var(--dim);margin-top:14px;letter-spacing:.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 14px;font:600 14px var(--body)}
+.chip b{color:var(--fire)}
+.big{display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.big div{padding:22px 14px 18px 0}
+.big strong{display:block;font:800 clamp(28px,3.4vw,44px)/1 var(--display);font-variant-numeric:tabular-nums}
+.big span{display:block;color:var(--dim);font-size:13.5px;margin-top:8px;line-height:1.4}
+.press{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.art{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;text-decoration:none;display:grid;gap:8px;align-content:start;transition:transform .15s}
+.art:hover{transform:translateY(-2px);border-color:var(--fire)}
+.art .o{display:flex;justify-content:space-between;font:500 12px var(--mono);color:var(--dim)}
+.art .o b{color:var(--ink);font-weight:600}
+.art h3{margin:0;font:700 17px/1.4 var(--kr)}
+.art.tv{border-left:4px solid var(--fire)}
+.vids{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.vid{text-decoration:none;display:grid;gap:8px}
+.vid .th{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:16/9;max-width:100%}
+.vid img{width:100%;height:100%;object-fit:cover;display:block}
+.vid .th .photo{height:100%;border-radius:12px}
+.vid .th::after{content:"▶";position:absolute;inset:auto 10px 10px auto;background:var(--fire);color:#fff;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:14px}
+.vid b{font:700 15px/1.4 var(--kr)}
+.vid small{font:500 12px var(--mono);color:var(--dim)}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.step{display:grid;gap:8px}
+.step .photo{aspect-ratio:4/3;min-height:0;font-size:11.5px}
+.step time{font:500 12px var(--mono);color:var(--fire)}
+.step b{font:700 15.5px/1.4 var(--kr)}
+.step strong{font:800 24px var(--display)}
+.career{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);border-top:2px solid var(--ink)}
+.career li{padding:16px 12px 6px 0;border-right:1px solid var(--line)}
+.career li:last-child{border-right:0}
+.career time{font:500 12px var(--mono);color:var(--dim)}
+.career b{display:block;font:800 19px var(--display);margin-top:4px}
+.career span{display:block;font:500 13.5px var(--kr);color:var(--ink2);margin-top:4px}
+@media (max-width:860px){.hero2{grid-template-columns:1fr}.hero2 .photo{min-height:320px}.big{grid-template-columns:1fr 1fr}.press,.vids{grid-template-columns:1fr}.tl{grid-template-columns:1fr 1fr}.career{grid-template-columns:1fr 1fr}.career li{border-right:0;border-bottom:1px solid var(--line)}}
+
+.hero-photo{margin:0;border-radius:22px;overflow:hidden;background:#e9e9f3;min-height:460px;max-width:100%}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block}
+.shot{border-radius:12px;overflow:hidden;aspect-ratio:4/3;max-width:100%}
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
+.shot.sm{aspect-ratio:16/8;margin-bottom:4px}
+.avatar{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center 25%;border:3px solid var(--paper);display:block;margin-bottom:14px}
+@media (max-width:860px){.hero-photo{min-height:0;aspect-ratio:4/5}}
+</style>
+</head><body>
+
+<div class="wrap">
+<nav>
+  <a class="brand" href="#"><img src="assets/img-90a8c562.jpg" alt="Fire Ant Crypto logo"><span><b>FIRE ANT</b><small>KOL · GTM · SEOUL</small></span></a>
+  <div class="links"><a href="#press">Press</a><a href="#tax">Crypto Tax</a><a href="#career">Career</a><a href="#contact">Contact</a></div>
+  <span class="lang">EN · 한국어</span>
+</nav>
+
+<header class="hero2">
+  <div>
+    <h1>GM, I'm <em>Fire Ant</em>.</h1>
+    <p class="kr">조상혁 · 불개미 CRYPTO</p>
+    <p class="tagline">KOREAN CRYPTO KOL · COMMUNITY LEADER · BRIDGE34</p>
+    <div class="chips"><span class="chip">📺 <b>KBS</b> · 한국경제TV</span><span class="chip">📜 <b>53,809</b> petition signatures</span><span class="chip">🇰🇷 in crypto since <b>2017</b></span></div>
+    <div class="ctas"><a class="btn pri" href="#contact">Work with me →</a><a class="btn" href="https://t.me/fireant_crypto">Telegram</a><a class="btn" href="https://www.youtube.com/@FIREANTCRYPTO">YouTube</a><a class="btn" href="https://x.com/fireant_korea">X</a></div>
+  </div>
+  <figure class="hero-photo"><img src="assets/img-8c016f45.jpg" alt="Fire Ant (Sanghyuk Cho) profile photo"></figure>
+</header>
+
+<div class="big">
+  <div><strong>30K+</strong><span>Telegram 불개미 CRYPTO</span></div>
+  <div><strong>53,809</strong><span>National Assembly petition signers</span></div>
+  <div><strong>512</strong><span>Donors · tax-delay campaign</span></div>
+  <div><strong>150+</strong><span>Projects via Bridge34</span></div>
+  <div><strong>9 yrs</strong><span>In Korean crypto (2017–)</span></div>
+</div>
+
+<svg class="bridges" viewBox="0 0 1120 70" role="img" aria-label="34 arcs for Seoul's 34 Han River bridges"><line x1="0" y1="60" x2="1120" y2="60"/><path d="M3.0 60 Q16.5 2.4 29.9 60"/><path d="M35.9 60 Q49.4 -0.8 62.9 60"/><path d="M68.9 60 Q82.4 -15.2 95.8 60"/><path d="M101.8 60 Q115.3 -18.3 128.8 60"/><path d="M134.8 60 Q148.2 -17.4 161.7 60"/><path d="M167.7 60 Q181.2 11.6 194.6 60"/><path d="M200.6 60 Q214.1 -21.1 227.6 60"/><path d="M233.6 60 Q247.1 8.3 260.5 60"/><path d="M266.5 60 Q280.0 14.9 293.5 60"/><path d="M299.5 60 Q312.9 26.7 326.4 60"/><path d="M332.4 60 Q345.9 3.3 359.4 60"/><path d="M365.4 60 Q378.8 23.3 392.3 60"/><path d="M398.3 60 Q411.8 16.6 425.2 60"/><path d="M431.2 60 Q444.7 -2.2 458.2 60"/><path d="M464.2 60 Q477.6 -11.5 491.1 60"/><path d="M497.1 60 Q510.6 -10.1 524.1 60"/><path d="M530.1 60 Q543.5 27.2 557.0 60"/><path d="M563.0 60 Q576.5 28.6 589.9 60"/><path d="M595.9 60 Q609.4 17.7 622.9 60"/><path d="M628.9 60 Q642.4 1.1 655.8 60"/><path d="M661.8 60 Q675.3 -15.0 688.8 60"/><path d="M694.8 60 Q708.2 -12.8 721.7 60"/><path d="M727.7 60 Q741.2 -20.3 754.6 60"/><path d="M760.6 60 Q774.1 -1.0 787.6 60"/><path d="M793.6 60 Q807.1 -3.7 820.5 60"/><path d="M826.5 60 Q840.0 15.7 853.5 60"/><path d="M859.5 60 Q872.9 14.4 886.4 60"/><path d="M892.4 60 Q905.9 20.5 919.4 60"/><path d="M925.4 60 Q938.8 2.0 952.3 60"/><path d="M958.3 60 Q971.8 -2.0 985.2 60"/><path d="M991.2 60 Q1004.7 -0.1 1018.2 60"/><path d="M1024.2 60 Q1037.6 10.0 1051.1 60"/><path d="M1057.1 60 Q1070.6 8.3 1084.1 60"/><path d="M1090.1 60 Q1103.5 18.1 1117.0 60"/></svg>
+
+<section id="press">
+  <p class="eyebrow">As seen on</p>
+  <h2>TV & Press</h2>
+  <div class="press"><a class="art tv" href="https://www.youtube.com/watch?v=njyujQV01VM"><div class="shot sm"><img src="assets/img-7f126955.jpg" alt="KBS News still"></div><div class="o"><b>KBS 지금뉴스</b><span>2026.10.21</span></div><h3>내년부터 코인에 세금?…청년 투자자들 “제도 개선 먼저”</h3></a><a class="art tv" href="https://www.wowtv.co.kr/NewsCenter/News/Read?articleId=A202602230088"><div class="o"><b>한국경제TV</b><span>2026.02.23</span></div><h3>크립토 전문 채널 첫 방송 출연 — 2026년 시장 전망</h3></a><a class="art" href="https://www.tokenpost.kr/news/insights/423316"><div class="o"><b>토큰포스트</b><span>인터뷰</span></div><h3>“코인 과세, 유예 후 재설계하라”…5만3809명 청원 이끈 ‘불개미’ 조상혁</h3></a><a class="art" href="https://www.dailian.co.kr/news/view/1703139"><div class="o"><b>데일리안</b><span>D-피플라운지</span></div><h3>“코인 과세, 회피 아니라 제대로 내고 싶다”</h3></a><a class="art" href="https://marketin.edaily.co.kr/News/ReadE?newsId=02650246645615216"><div class="o"><b>이데일리</b><span>2026.10.21</span></div><h3>“코인 과세 2년 더 유예해야”…청년 투자자들, 오늘 국회 기자회견</h3></a><a class="art" href="https://www.blockmedia.co.kr/archives/1152320"><div class="o"><b>블록미디어</b><span>2026</span></div><h3>“코인 과세 2년 유예해달라”…거리로 나선 투자자들</h3></a></div>
+</section>
+
+<section>
+  <p class="eyebrow">Watch</p>
+  <h2>YouTube</h2>
+  <div class="vids">
+    <a class="vid" href="https://www.youtube.com/watch?v=njyujQV01VM"><div class="th"><img src="assets/img-67e41e28.jpg" alt="KBS news clip thumbnail"></div><b>KBS 지금뉴스 — 청년 투자자들 “제도 개선 먼저”</b><small>KBS · 2026.10.21</small></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=YxKjgX5RVl4"><div class="th"><img src="assets/img-c0645150.jpg" alt="Bridge Summit video thumbnail"></div><b>Bridge Summit에서 만난 파운더들</b><small>불개미 코인 · YouTube</small></a>
+    
+  </div>
+</section>
+
+<section id="tax">
+  <p class="eyebrow">Policy campaign</p>
+  <h2>Delaying Korea's crypto tax</h2>
+  <div class="tl">
+    <div class="step"><time>2024.11</time><strong>50,000+</strong><b>국민동의청원 하루 만에 5만 명</b></div>
+    <div class="step"><time>2024.12</time><strong>✓</strong><b>코인 과세 유예 성사</b></div>
+    <div class="step"><time>2026.09</time><strong>$34K+</strong><b>KOL·홀더 512명 후원, 시위 트럭 운행</b></div>
+    <div class="step"><time>2026.10.21</time><strong>53,809</strong><b>국회 기자회견 · 청원 상임위 회부</b></div>
+    <div class="step"><time>~2026.12.23</time><strong>200</strong><b>#코인과세유예 SNS 캠페인 경품</b></div>
+  </div>
+</section>
+
+<section id="career">
+  <p class="eyebrow">Career</p>
+  <h2>9 years in Korean crypto</h2>
+  <ol class="career">
+    <li><time>2017–2018</time><b>FirstChain</b><span>퍼스트체인</span></li>
+    <li><time>2018–2019</time><b>Sandsquare</b><span>창업 멤버 · Senior BD<br>(이후 미투온 인수)</span></li>
+    <li><time>2019–2021</time><b>ROK Marine Corps</b><span>해병대 장교</span></li>
+    <li><time>2021–2024</time><b>Hangang Ventures</b><span>한강벤처스</span></li>
+    <li><time>2024–now</time><b>Bridge34</b><span>Seoul Web3 GTM</span></li>
+  </ol>
+</section>
+
+<div class="contact" id="contact">
+  <div><img class="avatar" src="assets/img-80712f32.jpg" alt="Sanghyuk Cho"><h2>Entering Korea?</h2><p>Send a short blurb about your project and timeline.</p>
+    <div class="ctas"><a class="btn pri" href="mailto:fireant@bridge34.com">Email me</a><a class="btn" href="https://t.me/fireant_crypto">Telegram</a></div></div>
+  <dl><dt>Email</dt><dd>fireant@bridge34.com</dd><dt>Agency</dt><dd>Bridge34 · contact@bridge34.com</dd><dt>Based in</dt><dd>Seoul, KST (UTC+9)</dd></dl>
+</div>
+<footer><span>© 2026 Fire Ant · 불개미 · 조상혁</span><span>fireantcrypto.com</span></footer>
+</div>
+
+</body></html>
