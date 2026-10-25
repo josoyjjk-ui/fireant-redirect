@@ -223,6 +223,21 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
 .ai-also{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
 .ai-also span{font:500 12.5px var(--mono);border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--ink2)}
 @media (max-width:860px){.ai{grid-template-columns:1fr}}
+
+/* 카드 높이 통일: 근거 줄은 항상 카드 바닥에 */
+.pillars{align-items:stretch}
+.pl{display:flex;flex-direction:column;gap:8px}
+.pl em,.pl a{margin-top:auto;padding-top:6px}
+/* 히어로: 사진 높이를 글 높이에 맞춤 */
+.hero2{align-items:stretch}
+.hero-photo{min-height:0!important;height:100%;width:100%}
+.hero-photo{position:relative}
+.hero-photo img{position:absolute;inset:0;object-position:center 12%}
+@media (max-width:860px){.hero-photo{height:auto;aspect-ratio:4/5}}
+/* 사진+글 카드(AI 섹션): 사진이 글 높이만큼 채움 */
+.ai{align-items:stretch}
+.ai-shot{display:block;position:relative;height:100%;min-height:260px}
+.ai-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
 </style>
 </head><body>
 
@@ -249,7 +264,7 @@ footer{font:500 12px var(--mono);color:var(--dim);padding-block:10px 40px;displa
   <p class="eyebrow">What Fire Ant means in Korea</p>
   <div class="pillars">
     <div class="pl"><span class="ic">🐜</span><b>The OG</b><p>Korea's longest-running crypto KOL. Talking to Korean holders since 2017.</p><em>Since 2017</em></div>
-    <div class="pl doxx"><img src="assets/img-7f126955.jpg" alt="Sanghyuk Cho on KBS News"><div><span class="ic">🪪</span><b>Fully doxxed</b><p>Real name, real face, on national TV. The only fully doxxed crypto KOL in Korea.</p><em>Sanghyuk Cho · KBS News</em></div></div>
+    <div class="pl"><span class="ic">🪪</span><b>Fully doxxed</b><p>Real name, real face, on national TV. The only fully doxxed crypto KOL in Korea.</p><em>Sanghyuk Cho · KBS News</em></div>
     <div class="pl"><span class="ic">🏛</span><b>Voice in politics</b><p>Led the petition and protests that delayed Korea's crypto tax. Spoke at the National Assembly.</p><em>53,809 signatures · 2024 tax delay</em></div>
     <div class="pl"><span class="ic">👑</span><b>KOL of KOLs</b><p>Korean KOLs back his campaigns with their own money.</p><a href="https://antinfo.io/donate">Donor leaderboard →</a></div>
     <div class="pl"><span class="ic">📺</span><b>Legacy media</b><p>Market commentary on Korea Economic TV. Featured by KBS, Edaily, Dailian, TokenPost.</p><em>Korea Economic TV · KBS</em></div>
